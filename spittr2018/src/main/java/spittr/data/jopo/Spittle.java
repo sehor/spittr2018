@@ -1,4 +1,4 @@
-package spittr.data;
+package spittr.data.jopo;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ public class Spittle {
 	private final String message;
 	private final Date time;
 	private Double latitude;
-	private Double longtitude;
+	private Double longitude;
 	
 	public Spittle(String message,Date time){
 		
@@ -24,7 +24,7 @@ public class Spittle {
 		this.message=message;
 		this.time=time;
 		this.latitude=latitude;
-		this.longtitude=longtitude;
+		this.longitude=longtitude;
 	}
 	
 	
@@ -34,11 +34,11 @@ public class Spittle {
 	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
-	public Double getLongtitude() {
-		return longtitude;
+	public Double getLongitude() {
+		return longitude;
 	}
-	public void setLongtitude(Double longtitude) {
-		this.longtitude = longtitude;
+	public void setLongitude(Double longtitude) {
+		this.longitude = longtitude;
 	}
 	public Long getId() {
 		return id;
