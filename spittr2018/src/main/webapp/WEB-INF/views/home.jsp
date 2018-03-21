@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
@@ -8,7 +9,7 @@
           href="<c:url value="/resources/style.css" />" >
   </head>
   <body>
-    <h1>Hello, Welcome to Spitter!</h1>
+    <h1>Hello, 欢迎 to Spitter!</h1>
 
     <a href="<c:url value="/spittles" />">Spittles</a> | 
     <a href="<c:url value="/spitter/register" />">Register</a>

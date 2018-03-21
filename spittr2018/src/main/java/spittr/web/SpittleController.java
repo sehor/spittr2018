@@ -5,17 +5,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import spittr.data.JdbcSpittleRepository;
+
 import spittr.data.SpittleForm;
 import spittr.data.SpittleRepository;
 import spittr.data.jopo.Spittle;
 
-import static org.springframework.web.bind.annotation.RequestMethod.*;
+
 
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
+
 
 @Controller
 @RequestMapping(value={"/spittles"})

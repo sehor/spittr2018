@@ -18,7 +18,7 @@ create table Spitter (
 insert into Spitter 
 (username,password,first_name,last_name,email)
 values
-('pzr','pzr123','peng','zhuorong','714534524@gmail.com'),
+('≈Ìpzr','pzr123','peng','zhuorong','714534524@gmail.com'),
 ('mike jason','pzr123','mike','jason','mikejason@gmail.com');
      
  

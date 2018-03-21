@@ -1,8 +1,10 @@
 package spittr.config;
 
+import java.nio.charset.Charset;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -23,6 +25,17 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		resolver.setExposeContextBeansAsAttributes(true);
 		return resolver;
 	}
+	
+	
+   @Bean
+   public StringHttpMessageConverter stringHttpMessageConverter(){
+	   
+	   Charset charset=Charset.forName("UTF-8");
+	
+	return new StringHttpMessageConverter(charset);
+	   
+	   
+   }
 	
 	@Override
 	public void configureDefaultServletHandling(

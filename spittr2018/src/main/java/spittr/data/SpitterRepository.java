@@ -8,5 +8,6 @@ public interface SpitterRepository {
 	
 	Spitter findSpitterByUsername(String username);
 	List<Spitter> findSpitters();
+	void save(Spitter spitter);
 
 }

@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spittr.config.DataConfig;
 import spittr.data.SpitterRepository;
 import spittr.data.SpittleRepository;
+import spittr.data.jopo.Spitter;
 import spittr.data.jopo.Spittle;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -25,7 +26,11 @@ public class DataTest {
 	@Test
 	public void test()throws Exception{
 		
-		System.out.println(spitterRepository.findSpitterByUsername("pzr").getEmail());
+	for(Spitter spit:spitterRepository.findSpitters()){
+			
+			System.out.println(spit.getUsername());
+		}
+		
 		spittleRepository.save(new Spittle("this is the first message!", new Date()));
 		for(Spittle spittle:spittleRepository.findSpittles(Long.MAX_VALUE, 20)){
 			
